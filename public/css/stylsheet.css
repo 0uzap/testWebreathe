@@ -1,0 +1,47 @@
+.test {
+    background-color: rgb(29, 39, 47);
+}
+
+.navbouton {
+    background-color: rgb(29, 39, 47);
+    color: #f8fcf8;
+}
+
+.navbouton:hover {
+    background-color: #1c62db;
+    color: #f8fcf8;
+    border-radius: 30px;
+}
+
+.text-nav {
+    color: #f8fcf8;
+}
+
+.text-nav:hover {
+    color: #f8fcf8;
+}
+
+.titrepage {
+    color: #1c62db;
+}
+
+.textForm {
+    color: #1c62db;
+}
+
+.formCheckbox {
+    display: flex;
+    justify-content: center;
+}
+
+
+.bouton {
+    background-color: #1c62db;
+    color: #f8fcf8;
+}
+
+.bouton:hover {
+    background-color: #1c62db;
+    color: #f8fcf8;
+}
+
