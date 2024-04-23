@@ -1,4 +1,4 @@
-function creationGraphique(ctx, moduleData) {
+/*export function creationGraphique(ctx, moduleData) {
     console.log("Données du module :", moduleData);
     
     const dates = moduleData.mesures.map(mesure => new Date(mesure.date));
@@ -35,5 +35,8 @@ function creationGraphique(ctx, moduleData) {
                 }]
             }
         }
-    })
+    });
 }
+*/
+
+// export {creationGraphique};
