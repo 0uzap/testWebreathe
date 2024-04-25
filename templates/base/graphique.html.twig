@@ -1,27 +1,31 @@
 {% extends 'base.html.twig' %}
+
 {% block title %}
-	{{parent()}}
-	Graphique des valeurs des modules
+    {{ parent() }}
+    Graphiques des valeurs des modules
 {% endblock %}
+
 {% block body %}
-	<div class="container-fluid">
-		<div class="row justify-content-center">
-			<div class="col-10 text-primary">
-				<h1 class="text-center titrepage mt-4 pt-4 display-1 fw-bold">
-					Graphique des valeurs des modules
-				</div>
-			</div>
-		</div>
-	</div>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-10 text-primary">
+            <h1 class="text-center titrepage mt-4 pt-4 display-1 fw-bold">
+                Graphiques des valeurs des modules
+            </h1>
+        </div>
+    </div>
+</div>
 
-	<div id="charts-container">
-		{% for module in modules %}
-			<div class="chart-container">
-				<h2>{{ module.nom }}</h2>
-				<canvas id="chart-{{ module.id }}"></canvas>
-			</div>
-		{% endfor %}
-	</div>
-	
+<div id="charts-container" class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            {% for module in modules %}
+            <div class="chart-container mb-4">
+                <h2 class="text-center">{{ module.nom }}</h2>
+                <canvas id="chart-{{ module.id }}"></canvas>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
 {% endblock %}
-

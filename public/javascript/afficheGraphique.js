@@ -1,11 +1,9 @@
-//import {creationGraphique} from'./creationGraphique';
-//import { getModuleData } from './recupApi';
 
 async function getModuleData() {
     try {
         const response = await fetch('https://s3-4677.nuage-peda.fr/testWeBreathe/public/api/modules');
 
-        console.log(res);
+        console.log(response);
 
         if (!response.ok) {
             throw new Error('Erreur: ' + response.status + ' ' + response.statusText);
@@ -61,7 +59,7 @@ function creationGraphique(ctx, moduleData) {
 
 async function afficheGraphique() {
     console.log("cc");
-    const modulesData = await getModuleData;
+    const modulesData = await getModuleData();
 
     console.log("Données des modules :", modulesData);
 
